@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Catalog - AO Travel</title>
+    <link rel="stylesheet" href="tripcatalog.css">
+</head>
+
+<body>
+    <header>
+        <div class="gradient-line"></div>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo"><a href=""><img src="aotravellogo.png" alt="Logo"></a></h1>
+                <div class="menu-icon">☰</div>
+                <div class="nav-list">
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html">About</a>
+                    <a href="Tripcatalog.html">Trip Catalog</a>
+                    <a href="contactus.html">Contact Us</a>
+                    <a href="tourreview.html">Tour Review</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="trip-catalog">
+            <h2>Explore Our Trip Packages</h2>
+            <div class="filter-container">
+                <div class="filter">
+                    <label for="country">Sort by Country:</label>
+                    <select id="country">
+                        <option value="north-america">North America</option>
+                        <option value="south-america">South America</option>
+                        <option value="africa">Africa</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="antarctica">Antarctica</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="activity">Sort by Activity:</label>
+                    <select id="activity">
+                        <option value="family-tour">Family Tour</option>
+                        <option value="adventure-tour">Adventure Tour</option>
+                        <option value="luxury-tour">Luxury Tour</option>
+                        <option value="cultural-tour">Cultural Tour</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="trip-packages">
+                <div class="package">
+                    <img src="nrt america.jpg" alt="North America Trip">
+                    <h3>North America Adventure</h3>
+                    <p>Experience the beauty of the Rockies and the culture of the cities.</p>
+                </div>
+                <div class="package">
+                    <img src="sth america.jpg" alt="South America Trip">
+                    <h3>South America Culture</h3>
+                    <p>Immerse yourself in the rich history and landscapes of South America.</p>
+                </div>
+                <div class="package">
+                    <img src="africa.jpg" alt="Africa Trip">
+                    <h3>Africa Safari</h3>
+                    <p>Discover wildlife like never before on an unforgettable safari.</p>
+                </div>
+                <div class="package">
+                    <img src="europe.jpg" alt="Europe Trip">
+                    <h3>European Getaway</h3>
+                    <p>Visit iconic landmarks and enjoy the diverse cultures across Europe.</p>
+                </div>
+                <div class="package">
+                    <img src="asia.jpg" alt="Asia Trip">
+                    <h3>Asia Exploration</h3>
+                    <p>Explore ancient temples and modern cities in Asia.</p>
+                </div>
+                <div class="package">
+                    <img src="antarctica.jpg" alt="Antarctica Trip">
+                    <h3>Antarctic Expedition</h3>
+                    <p>Experience the untouched beauty of Antarctica.</p>
+                </div>
+                <div class="package">
+                    <img src="australia.jpg" alt="Australia Trip">
+                    <h3>Australia Tour</h3>
+                    <p>Discover the wonders of Australia from beaches to outback adventures.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>AO Travel</h3>
+                <p>Explore the world with us! Exceptional service and unforgettable adventures await.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="Tripcatalog.html">Trip Catalog</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="tourreview.html">Tour Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: support@aotravel.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AO Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+
+        document.querySelector(".menu-icon").addEventListener("click", function() {
+            let navList = document.querySelector(".nav-list");
+            navList.classList.toggle("active");
+        });
+
+    </script>
+</body>
+
+</html>

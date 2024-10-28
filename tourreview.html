@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Review - AOtravel.com</title>
+    <link rel="stylesheet" href="tourreview.css">
+</head>
+
+<body>
+    <header>
+        <div class="gradient-line"></div>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo"><a href=""><img src="aotravellogo.png" alt="Logo"></a></h1>
+                <div class="menu-icon">☰</div>
+                <div class="nav-list">
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html">About</a>
+                    <a href="Tripcatalog.html">Trip Catalog</a>
+                    <a href="contactus.html">Contact Us</a>
+                    <a href="tourreview.html">Tour Review</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <h2 class="main-heading">Tour Review</h2>
+            <p class="main-para">We value your feedback! Please share your experience with us.</p>
+
+            <section class="review-section">
+                <h3>Package Review</h3>
+                <form action="#" method="POST">
+                    <label for="package-name">Package Name:</label>
+                    <input type="text" id="package-name" name="package-name" required>
+
+                    <label for="package-review">Review:</label>
+                    <textarea id="package-review" name="package-review" rows="5" required></textarea>
+
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">Select a rating</option>
+                        <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+                        <option value="4">⭐️⭐️⭐️⭐️</option>
+                        <option value="3">⭐️⭐️⭐️</option>
+                        <option value="2">⭐️⭐️</option>
+                        <option value="1">⭐️</option>
+                    </select>
+
+                    <button type="submit">Submit Review</button>
+                </form>
+            </section>
+
+            <section class="feedback-section">
+                <h3>Feedback</h3>
+                <form action="#" method="POST">
+                    <label for="feedback-name">Name:</label>
+                    <input type="text" id="feedback-name" name="feedback-name" required>
+
+                    <label for="feedback-email">Email:</label>
+                    <input type="email" id="feedback-email" name="feedback-email" required>
+
+                    <label for="feedback-message">Message:</label>
+                    <textarea id="feedback-message" name="feedback-message" rows="5" required></textarea>
+
+                    <button type="submit">Send Feedback</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>AO Travel</h3>
+                <p>Explore the world with us! Exceptional service and unforgettable adventures await.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="Tripcatalog.html">Trip Catalog</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="tourreview.html">Tour Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: support@aotravel.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AO Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+
+        document.querySelector(".menu-icon").addEventListener("click", function () {
+            const navList = document.querySelector(".nav-list");
+            navList.classList.toggle("active");
+        });
+
+    </script>
+
+</body>
+
+</html>
